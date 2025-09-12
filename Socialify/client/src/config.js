@@ -1,4 +1,4 @@
-let BASE_URL = "http://<your-ec2-public-ip>:5000/";
+let BASE_URL = import.meta.env.VITE_BASE_URL;
 
 // Optional: fallback to localhost in development only
 if (!process.env.NODE_ENV || process.env.NODE_ENV === "development") {
